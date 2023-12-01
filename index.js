@@ -11,6 +11,13 @@ form.addEventListener('submit', (e) => {
     } else if (passwordInput.value.length == 0 && passwordInput.value == '') {
         alert('Enter password')
     } else {
-        alert('ფორმა დადასტურდა \nთქვენი მაილი არის: ' + emailInput.value + '\nთქვენი პასვორდი არის: ' + passwordInput.value)
+        alert('ფორმა დადასტურდა')
     }
 });
+
+emailInput.addEventListener('change', () => {
+    console.log('მოხდა ცვლილება - ',emailInput.value)
+})
+passwordInput.addEventListener('change', () => {
+    console.log('მოხდა ცვლილება - ',passwordInput.value)
+})
